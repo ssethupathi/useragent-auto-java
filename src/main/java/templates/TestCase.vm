@@ -1,0 +1,37 @@
+package ${JAVA_PACKAGE};
+
+#foreach($JAVA_IMPORT in ${JAVA_IMPORTS})
+import ${JAVA_IMPORT};
+#end
+
+public class ${JAVA_CLASS} {
+
+	private InteractionSession session;
+	
+	@Before
+	public void setUp() {
+		session = new DefaultInteractionSession.newSession();
+	}
+	
+	@Test
+	public void test1() {
+	#foreach($usecaseStep in ${usecase.getSteps()})
+		#set($request = $usecaseStep.request())
+		#set($response = $usecaseStep.response()) 
+		session
+		#foreach($headerName in ${request.headerNames()})
+			.header("$headerName", "${request.headerValue($headerName)}")
+		#end
+			#set($method = $request.method().toLowerCase())
+			#if ($method == "post")
+			.reuse()
+			#end
+//          .set("propName1","propValue1").set("propName2","propValue2");	
+			.url("$request.url()").$method;
+			
+			assertThat(session.result().code(), equalTo(${response.statusCode()}));
+//          assertThat(session.entities().item().get("propName1"), equalTo("propValue1"));
+		    
+	#end
+	}
+}

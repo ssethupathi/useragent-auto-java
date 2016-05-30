@@ -1,0 +1,31 @@
+KEY        20160601-142554-00017-GET-ContextEnquiryList/verPersonEntity_ProspectInput
+ATTR       REQUEST_URL http://localhost:9089/hothouse-iris/Hothouse.svc/GB0010001/ContextEnquiryList/verPersonEntity_ProspectInput
+ATTR       REQUEST_METHOD GET
+ATTR       REQUEST_HEADER_X-IRIS-CLIENT BROWSER_DIRECT
+ATTR       REQUEST_HEADER_T24Auth X2ssAphQog8xlH9u0n%2FIVu4C4JF5nnN4%2FTPAa3aMZRHBLd9YANegd6onyAEI%2FTbISLDQs7xbDG0H%0D%0Acmcl%2FWst6PBUWUsgT3KXdQjK8DFEzoomxke3kmKZE77HF2BI4SSJbz8c2YT%2F2Bmy6Bn1eX1c8Akm%0D%0AqGzzWdqnmHdtumHAz5s%3D%0D%0A%7CwhUzC7dkNyZaHahBCVBnJAiqv%2Bf3uBZWNKrZ22OZpeEQxIrAcugpK1ygHk0TJp6yqYx6ohrtTpGy%0D%0ATIUCge9gSw%3D%3D%0D%0A%7CIS932RJXRqBnHZT2vdrB%2BorSFF4%3D
+ATTR       REQUEST_HEADER_Accept-Language en
+ATTR       REQUEST_SENT_TIME 2016-06-01 14:25:53.604-863000000
+ATTR       RESPONSE_RECEIVED 2016-06-01 14:25:54.124-822000000
+ATTR       RESPONSE_TIME 0.520
+ATTR       RESPONSE_HEADER_Server Apache-Coyote/1.1
+ATTR       RESPONSE_HEADER_Set-Cookie T24Auth=X2ssAphQog8xlH9u0n%2FIVu4C4JF5nnN4%2FTPAa3aMZRHBLd9YANegd6onyAEI%2FTbISLDQs7xbDG0H%0D%0Acmcl%2FWst6PBUWUsgT3KXdQjK8DFEzoomxke3kmKZE77HF2BI4SSJbz8c2YT%2F2Bmy6Bn1eX1c8Akm%0D%0AqGzzWdqnmHdtumHAz5s%3D%0D%0A%7CwhUzC7dkNyZaHahBCVBnJAiqv%2Bf3uBZWNKrZ22OZpeEQxIrAcugpK1ygHk0TJp6yqYx6ohrtTpGy%0D%0ATIUCge9gSw%3D%3D%0D%0A%7CIS932RJXRqBnHZT2vdrB%2BorSFF4%3D; Expires=Wed, 01-Jun-2016 13:55:53 GMT; Path=/; HttpOnly
+ATTR       RESPONSE_HEADER_Content-Type application/atom+xml
+ATTR       RESPONSE_HEADER_Date Wed, 01 Jun 2016 13:25:53 GMT
+ATTR       RESPONSE_STATUS_CODE 200
+ATTR       RESPONSE_STATUS_REASON_PHRASE OK
+START_ATTR RESPONSE_MESSAGE
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xml:base="http://localhost:9089/hothouse-iris/Hothouse.svc/GB0010001/">
+  <id>http://localhost:9089/hothouse-iris/Hothouse.svc/GB0010001/ContextEnquiryList/verPersonEntity_ProspectInput</id>
+  <title type="text" />
+  <updated>2016-06-01T13:25:54Z</updated>
+  <author>
+    <name />
+  </author>
+  <link href="ContextEnquiryList/verPersonEntity_ProspectInput" rel="self" profile="http://www.temenos.com/rels/contextenquiry" title="ContextEnquiryList" />
+  <category term="BRP-modelsModel.Entity" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+  <content type="application/xml">
+    <m:properties />
+  </content>
+</entry>
+END_ATTR
